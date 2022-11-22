@@ -35,7 +35,10 @@ function App() {
       <li>Sandia</li>
       <li>Berrys</li>
       <li>Banano</li>
-      <Footer/>
+      <Footer>
+      <strong>Enlace 1</strong>
+      <strong>Enlace 2</strong>
+      </Footer>
     </div>
   );
 }
