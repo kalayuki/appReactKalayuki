@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Footer from './componets/Footer';
 import Saludo from './componets/Saludo';
+import NavBar from './componets/NavBar';
+import ItemListContainer from './componets/ItemListContainer';
 
 
 
@@ -22,23 +24,13 @@ function App() {
   
   return (
     <div className="App">
-      <h1> Hola Mundo</h1>
-      <strong style={estilo}>Este es un mensaje para {nombre} </strong>
-      {boton}
-
-
-      <Saludo name='Gabriel' age='31' lastName='Kalayuki' action={mensaje}></Saludo> 
-      <Saludo name='ana' lastName='Perez' age='34' action={mensaje}></Saludo>
-
-      <li>Fresa</li>
-      <li>Melon</li>
-      <li>Sandia</li>
-      <li>Berrys</li>
-      <li>Banano</li>
-      <Footer>
-      <strong>Enlace 1</strong>
-      <strong>Enlace 2</strong>
-      </Footer>
+      <NavBar > 
+      <a className="link link-hover">Productos</a>
+      <a className="link link-hover">Iniciar sesion</a>
+      <a className="link link-hover">Contacto</a>
+      </NavBar >
+      <ItemListContainer greeting="Bienvenido a nuestra tienda online, de alimentos saludables"/>
+      
     </div>
   );
 }
