@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Footer from './componets/Footer';
 import Saludo from './componets/Saludo';
+import Navbar from './componets/Navbar';
+import ItenListContainer from './componets/ItenListContainer';
 
 
 
@@ -22,6 +24,8 @@ function App() {
   
   return (
     <div className="App">
+      <Navbar/>   
+      <ItenListContainer greting='Hola mundo'></ItenListContainer>
       <h1> Hola Mundo</h1>
       <strong style={estilo}>Este es un mensaje para {nombre} </strong>
       {boton}
@@ -44,3 +48,4 @@ function App() {
 }
 
 export default App;
+

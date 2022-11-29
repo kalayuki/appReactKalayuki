@@ -36,7 +36,7 @@ const Saludo = ({name, age, lastName,action}) => {
   return (
     <>
     <div style={title}>
-    <div >saludo {nombreMayuscula} {lastName}</div>
+    <h1 className="text-xl text-orange-700 font-bold underline">saludo {nombreMayuscula} {lastName}</h1>
     <div>Tienes {age} años</div>
     <button onClick={action}>Click</button>
     </div>
