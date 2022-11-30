@@ -4,6 +4,7 @@ import Footer from './componets/Footer';
 import Saludo from './componets/Saludo';
 import Navbar from './componets/Navbar';
 import ItenListContainer from './componets/ItenListContainer';
+import Clicker from './componets/Clicker';
 
 
 
@@ -27,8 +28,13 @@ function App() {
       <Navbar/>   
       <ItenListContainer greting='Hola mundo'></ItenListContainer>
       <h1> Hola Mundo</h1>
-      <strong style={estilo}>Este es un mensaje para {nombre} </strong>
-      {boton}
+
+
+      <Clicker></Clicker>
+
+      {/* Dejamos comentado esto parapoder visualizar clicker ya que que tiene estilos particulares */}
+      {/* <strong style={estilo}>Este es un mensaje para {nombre} </strong> */}
+      {/* {boton} */}
 
 
       <Saludo name='Gabriel' age='31' lastName='Kalayuki' action={mensaje}></Saludo> 
