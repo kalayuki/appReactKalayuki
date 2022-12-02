@@ -5,6 +5,8 @@ import Saludo from './componets/Saludo';
 import Navbar from './componets/Navbar';
 import ItenListContainer from './componets/ItenListContainer';
 import Clicker from './componets/Clicker';
+import ProductsList_ej1y2 from './componets/ProductsList_ej1y2';
+import ProductsList from './componets/ProductsList';
 
 
 
@@ -26,6 +28,20 @@ function App() {
   return (
     <div className="App">
       <Navbar/>   
+
+      {/* Comentamos ProductsList_ej1y2 para poder ver el ejemplo de la clase 6 
+     <ProductsList_ej1y2/>
+      */}
+
+       <ProductsList></ProductsList> 
+
+
+
+
+
+
+      {/* Comentamos todo esto para ver los producto list  */}
+       {/* 
       <ItenListContainer greting='Hola mundo'></ItenListContainer>
       <h1> Hola Mundo</h1>
 
@@ -33,8 +49,8 @@ function App() {
       <Clicker></Clicker>
 
       {/* Dejamos comentado esto parapoder visualizar clicker ya que que tiene estilos particulares */}
-      {/* <strong style={estilo}>Este es un mensaje para {nombre} </strong> */}
-      {/* {boton} */}
+      {/* <strong style={estilo}>Este es un mensaje para {nombre} </strong> }
+      {/* {boton} }
 
 
       <Saludo name='Gabriel' age='31' lastName='Kalayuki' action={mensaje}></Saludo> 
@@ -48,7 +64,7 @@ function App() {
       <Footer>
       <strong>Enlace 1</strong>
       <strong>Enlace 2</strong>
-      </Footer>
+      </Footer> */}
     </div>
   );
 }
