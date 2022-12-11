@@ -8,35 +8,51 @@ import Clicker from './componets/Clicker';
 import ProductsList_ej1y2 from './componets/ProductsList_ej1y2';
 import ProductsList from './componets/ProductsList';
 import CharList from './componets/rickandmorty/CharList';
+import GlassesList from './componets/affter1/GlassesList';
+import GlassDetails from './componets/affter1/GlassDetails';
 
 
 
 function App() {
-  //Establecems una constante para poder observar como lo establecemos en el contenido
-  const boton= <button>BOTON</button>
-  const nombre='Mauricio'
-  //Agregamos un estilo
-  const estilo ={
-    color:'red',  
-    backgroundColor:'yellow',
-    padding:20, 
-  }
 
-  const mensaje =()=>{
-    console.log('mensaje de la consola')
-  } 
   
   return (
     <div className="App">
       <Navbar/>   
 
+      {/* //Affter <GlassesList */}
+      {/* PASO 0 */}
+      {/* GLASSESLIST LLAMAMOS A NUESTRO NUEVO ARCHVOS  */}
+
+
+      <GlassesList></GlassesList>
+
+      {/* PASO 1 */}
+      {/* ... VER EN EL ARCHIVO GLASSESLIST */}
+
+     {/* PASO 7 */}
+     {/* GLASSDETAILS,  llamamos a nuestro nuevo archivo donde simularemos poner la descripcion de nuestros productos  */}
+
+      <GlassDetails></GlassDetails>
+
+      {/* PASO 8  */}
+      {/* ...VER EN EL ARCHIVO GLASSDETAILS */}
+
+
+
+
+
+
+      {/* CLASES ANTERIORES */}
+
+
       {/* Comentamos ProductsList_ej1y2 para poder ver el ejemplo de la clase 6 
      <ProductsList_ej1y2/>
       */}
 
-       <ProductsList></ProductsList> 
+       {/* <ProductsList></ProductsList>  
 
-       <CharList></CharList>
+       <CharList></CharList>*/}
 
 
 
