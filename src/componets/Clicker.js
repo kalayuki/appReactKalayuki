@@ -30,7 +30,8 @@ const Clicker = () => {
     que quiero ejectar  e indificar el momento ; ESTE SUCEDE CADA VEZ QUE SE PRODUCE UN RENDER*/ 
           useEffect(()=>{
             console.log('se hizo un render')
-
+             //Esta funcio se ejecuta en el desmontaje s, que se ve en proximas clases
+             return ()=>{}
 
           })
       //SOLO AL INICIO , EN EL MONTAJE MOUTING
@@ -55,7 +56,7 @@ useEffect(()=> {
     console.log('En montaje y cuando cambia Cout')
   }, [count])
 
-  
+
   return (
     
     <div className='p-20 flex flex-col mx-5'>

@@ -7,6 +7,7 @@ import ItenListContainer from './componets/ItenListContainer';
 import Clicker from './componets/Clicker';
 import ProductsList_ej1y2 from './componets/ProductsList_ej1y2';
 import ProductsList from './componets/ProductsList';
+import CharList from './componets/rickandmorty/CharList';
 
 
 
@@ -35,7 +36,7 @@ function App() {
 
        <ProductsList></ProductsList> 
 
-
+       <CharList></CharList>
 
 
 
