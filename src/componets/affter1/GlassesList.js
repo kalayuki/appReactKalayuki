@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react'
+import { PRODUCTS } from '../Data/Glasses'
 import { GlassCard } from './GlassCard'
 
+/* BORRAMOS EL ARRAY YA QUE NO LO LLEVAMOS A DATA- GLASSES , PARA QUE SEA MEJOR 
 const PRODUCTS= [
     {id:1 , title:"RayBan", descriptio: "Son un gran marco de lentes ", price:1500, stock:100},
     {id:2 , title:"Vogue", descriptio: "Son un gran marco de lentes ", price:3500, stock:100},
     {id:3 , title:"Rusty", descriptio: "Son un gran marco de lentes ", price:1000, stock:100},
     {id:4 , title:"Vulk", descriptio: "Son un gran marco de lentes ", price:1900, stock:100},
 ]
+*/
 
 
 //Paso 1 

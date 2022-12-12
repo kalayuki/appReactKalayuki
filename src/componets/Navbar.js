@@ -1,10 +1,21 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
     <div className="flex-1">
-      <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+      {/* C8- PASO 4 
+            - cambiamos daysiIU por Mitienda
+            - sacamos a y lo cambiamos por Link, que es donde nos pemitira hacer la ruta 
+                  recordar importarlo
+            - to='/' de esta manrea idicamos a donde debe linkear , si ponemos '/' , linkea a la misma pagina 
+                  para cambiarla por ejemplo que vaya a phone , es simplemente to='/phone volevr a 
+                  
+                  
+                  -- PASO 5
+                  .... VER pp.js'*/}
+      <Link to='/' className="btn btn-ghost normal-case text-xl">MI tienda</Link>
     </div>
     <div className="flex-none">
       <div className="dropdown dropdown-end">

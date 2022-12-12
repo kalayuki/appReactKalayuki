@@ -14,7 +14,7 @@ const CharList = () => {
          setTimeout (()=>{
             getCharts()
     
-        },5000)
+        },200)
   
     }, [])
 

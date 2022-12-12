@@ -64,7 +64,7 @@ const ProductsList = () => {
          setTimeout(()=>{
        
           resolve(PRODUCTS)
-      }, 2000 //etos son los minutos 
+      }, 500//etos son los minutos 
       );
     })
   }
