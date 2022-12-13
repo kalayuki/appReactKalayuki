@@ -1,11 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBar = ({children}) => {
   return (
     <div className="navbar bg-base-100 bg-lime-600 ">
     <div className="flex-1">
       <a className="btn btn-ghost normal-case text-xl">Ne.mu</a>
-      <div className='flex-initial w-64 flex flex-none  gap-3.5 self-center '>{children}</div>
+      <div className='flex-initial w-64 flex flex-none  gap-3.5 self-center '>
+        <Link to={'/'}>
+        Home</Link>
+        <Link to={'/category/DESAYUNOS_Y_MERIENDAS'}>
+        Desayunos y meriendas</Link>
+        <Link to={'/category/LECHES_VEGETALES'}>Leches vegetales</Link>
+        <Link to={'/category/FRUTOS_SECOS'}>Frutos secos</Link>
+        <Link to={'/category/LEGUMBRES_Y_SEMILLAS'}>LEGUMBRES Y SEMILLAS</Link>
+        <Link to={'/category/MIX'}></Link>
+
+      </div>
     </div>
     
     <div className="flex-none">
