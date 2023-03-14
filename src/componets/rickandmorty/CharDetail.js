@@ -1,6 +1,7 @@
 import { data } from 'autoprefixer'
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { DarkMOdeCotext } from '../Context/DarkmodeContext'
 
 
 
@@ -15,6 +16,13 @@ const {charId}= useParams()
         //De esta manera cuando se covierta la informacion a json , ahi la traremos en nuestro setChar
 
         const [char, setChar] = useState()
+
+        /*C10 E1 P5
+        -traemos el contexto
+        -Utilizamos el nombre de la constante que hicimos en el ppaso 4 darkMOdeCotext
+        -Este deberia traer un true*/
+
+        const darkmode =useContext(DarkMOdeCotext)
 
     //C8-2 PASO 4
     // useEffect, llamamos a la funcion getChardDetail()
@@ -51,6 +59,10 @@ const {charId}= useParams()
     <div>
         <h1>CharDetai {charId}</h1>
         <pre>{JSON.stringify(data)}</pre>
+        {/* /*C10 E1 P6
+        - hacemosun p para traer el drak mode 
+        -Le ponemos un condicional {darkmode ? 'on':'off'}*/}
+        <p className='text-xl'>Darmode {darkmode ? 'on':'off'} </p>
         
         </div>
     

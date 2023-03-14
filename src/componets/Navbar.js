@@ -4,6 +4,13 @@ import { Link} from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
+
+
+
+
+
+
+
     <div className="flex-1">
       {/* C8- PASO 4 
             - cambiamos daysiIU por Mitienda
@@ -30,7 +37,9 @@ const Navbar = () => {
             <span className="font-bold text-lg">8 Items</span>
             <span className="text-info">Subtotal: $999</span>
             <div className="card-actions">
+              <Link to='/glass/cart'>
               <button className="btn btn-primary btn-block">View cart</button>
+              </Link>
             </div>
           </div>
         </div>

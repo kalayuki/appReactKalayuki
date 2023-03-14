@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { useCart } from '../Context/cartContext'
 import { PRODUCTS } from '../Data/Glasses'
 import { GlassCout } from './GlassCout'
 
@@ -35,6 +36,8 @@ const GlassDetails = () => {
     //C8- PASO 9
     //VER EN GLASSES
     const {id}= useParams()
+
+    const {addToCart}=useCart()
 
     //PASO 9
     //USEEFECTS ,  se utilizara para establecer como se realizara en el momento del montaje 
@@ -76,6 +79,11 @@ const GlassDetails = () => {
 
     }
 
+    const addHandler = ()=>{
+      addToCart(id)
+    }
+    
+
   return (
     //PASO 13 
     //DETALLES DEL RODUCTOS , LE DAMOS ESTRUCTIRA Y ESTILO LO QUE SE VERA 
@@ -93,6 +101,7 @@ const GlassDetails = () => {
         //{...item} llamamos a todos los elementosdel obejto */}
         
         <GlassCout {...item}></GlassCout>
+        <button className='btn' onClick={addHandler} >Agregar Al carrito</button>
 
         {/* PASO 15
          // ... VER COMPONENTE GLASSCOUT */}
